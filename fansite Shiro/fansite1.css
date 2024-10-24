@@ -103,6 +103,15 @@ nav ul li a:hover {
     color: black; 
 }
 
+.main-center{
+    margin: 60px;
+}
+
+.separateur{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 main {
     background-color: #ffffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -129,10 +138,10 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li{
+nav:not(.notnav) ul li{
     float: left;
     width: 25%;
-    text-align: center;
+    text-align:left;
 }
 
 nav ul::after{
@@ -198,3 +207,37 @@ nav > ul li:hover .sous{
 
 /*faire en sorte que le contenu du header ne soit pas poussé vers le bas avec une position absolute*/
 
+/*Side bar menu*/
+
+aside{
+    background-color: #BCBBBB;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    margin-top: 55px;
+    position: sticky;
+    top: 5%;
+}
+
+.align{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-left: 1px solid #000000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+aside ul li{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+aside ul li a {
+    color: black;
+    text-decoration: none; 
+}
+
+aside ul li a:hover {
+    color: rgb(255, 0, 34); 
+}
