@@ -178,7 +178,8 @@ nav a{
 }
 
 nav > ul li:hover .sous{
-    display: block;
+    display: flex;
+    flex-direction: column;
 } 
 /* Ce sélecteur permet de cibler un sous menu .sous lorsqu'un utilisateur passe sa souris sur un élément li de la liste représentant notre menu principal */
 
