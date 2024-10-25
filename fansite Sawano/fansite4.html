@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="fansite4.css">
 </head>
 <body>
-    <header class="menu">   
+    <header class="menu">
+        <a href="../fansite index/index.html"><img src="image_sawano/logo.png" alt="logo de Eclipse Melodies" id="logo-header"></a>   
         <nav class="header-deroulant"> 
-            <a href="../fansite index/index.html"><img src="image_sawano/logo.png" alt="logo de Eclipse Melodies" id="logo-header"></a>
             <ul>
                 <li class ="deroulant"><a href="../fansite Shiro/fansite1.html" class="link-page">Shiro Sagisu &ensp;</a>
                     <ul class ="sous">
@@ -48,11 +48,21 @@
                         <li><a href ="../fansite Sawano/fansite4.html#nav_event">Evenements</a></li>                  
                         <li><a href = "../fansite Sawano/fansite4.html#nav_clips">Clips</a></li>
                         <li><a href = "../fansite Sawano/fansite4.html#nav_site">Site officiel</a></li>
-                        <li> <a href = "../fansite Sawano/fansite4.html#nav_actu">Newsletter</a></li>
+                        <li><a href = "../fansite Sawano/fansite4.html#nav_actu">Newsletter</a></li>
                     </ul>
                 </li>        
             </ul>
         </nav>
+        <div class="burger">
+            <input type="checkbox" id="burger">
+            <label id="burger-logo" for="burger">☰</label>
+            <nav>
+                <a href="#">Shiro Sagisu</a>
+                <a href="#">Daft Punk</a>
+                <a href="#">Lil Peep</a>
+                <a href="#">Sawano Hiroyuki</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="presentation">
@@ -125,18 +135,18 @@
                         <input type="radio" name="slides" id="slide1" checked>
                         <figure>
                             <video src="image_sawano/SawanoHiroyuki[nZk]_XAI 『DARK ARIA ＜LV2＞』 Music Video.mp4" controls width="700"></video>
-                            <label for="slide2" class="next"><img src="image_sawano/suivant.png" alt="bouton pour allé au clip suivant" class="bouton"></label>
+                            <label for="slide2" class="next"><img src="image_sawano/suivant.png" alt="bouton pour aller au clip suivant" class="bouton"></label>
                         </figure>
                         <input type="radio" name="slides" id="slide2">
                         <figure>
                             <video src="image_sawano/SawanoHiroyuki[nZk]TOMORROW X TOGETHER 『LEveL』 Music Video.mp4" controls width="700"></video>
-                            <label for="slide1" class="last"><img src="image_sawano/precedent.png" alt="bouton pour allé au clip précédent" class="bouton"></label>
-                            <label for="slide3" class="next"><img src="image_sawano/suivant.png" alt="bouton pour allé au clip suivant" class="bouton"></label>
+                            <label for="slide1" class="last"><img src="image_sawano/precedent.png" alt="bouton pour aller au clip précédent" class="bouton"></label>
+                            <label for="slide3" class="next"><img src="image_sawano/suivant.png" alt="bouton pour aller au clip suivant" class="bouton"></label>
                         </figure>
                         <input type="radio" name="slides" id="slide3">
                         <figure>
                             <video src="image_sawano/SawanoHiroyuki[nZk]XAI「LEMONADE」Music Video 七つの大罪 怨嗟のエジンバラ 前編 ver..mp4" controls width="700"></video>
-                            <label for="slide2" class="last"><img src="image_sawano/precedent.png" alt="bouton pour allé au clip précédent" class="bouton"></label>
+                            <label for="slide2" class="last"><img src="image_sawano/precedent.png" alt="bouton pour aller au clip précédent" class="bouton"></label>
                         </figure>
                     </article>
                 </section>
