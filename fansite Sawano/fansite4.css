@@ -83,7 +83,7 @@ nav > ul li:hover .sous{
     border-bottom: none;
 }
 
-.sous a:hover{
+.sous a:active{
     border-bottom: none;
     background-color: RGBa(200,200,200,0.1);
 }
@@ -307,7 +307,8 @@ footer {
 }
 
 .burger{
-    margin-left: 80%;
+    margin-left: 70%;
+    scale: 287%;
 }
 
 #burger{
@@ -336,13 +337,14 @@ footer {
     overflow: hidden;
     width: 200px;
   /* Pour que les liens soient "rangés" par défaut */
-    transform: translateX(-160px);
+    transform: translateX(-159px);
     position: absolute;
   }
 
-.burger nav a {
+.burger nav a ul li {
   color: black;
   text-decoration: none;
+  list-style-type: none;
   padding: 10px;
 }
 
@@ -372,6 +374,42 @@ footer {
     .align{
         display: none;
     }
+
+    #logo-header{
+        scale: 200%;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+
+    .sous{
+        display: none;
+        box-shadow: 0px 1px 2px orange;
+        background-color: #3a3a3a;
+        opacity: 75%;
+        z-index:10;
+    }
+    
+    nav > ul li:active .sous{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+    
+    .sous li{
+        float : none;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .sous a{
+        padding: 10px;
+        border-bottom: none;
+    }
+
+    .sous a:active{
+        border-bottom: none;
+        background-color: RGBa(200,200,200,0.1);
+    }
 }
 
 @media screen and (max-width: 819px){
@@ -397,5 +435,41 @@ footer {
 
     .menu{
         height: 94px;
+    }
+
+    #logo-header{
+        scale: 200%;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+
+    .sous{
+        display: none;
+        box-shadow: 0px 1px 2px orange;
+        background-color: #3a3a3a;
+        opacity: 75%;
+        z-index:10;
+    }
+    
+    nav > ul li:active .sous{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+    
+    .sous li{
+        float : none;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .sous a{
+        padding: 10px;
+        border-bottom: none;
+    }
+
+    .sous a:active{
+        border-bottom: none;
+        background-color: RGBa(200,200,200,0.1);
     }
 }
