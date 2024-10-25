@@ -23,6 +23,7 @@ nav{
     margin-left: 3%;
     width: 210px;
     font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #logo-header{
@@ -39,11 +40,6 @@ aside{
     top: 5%;
 }
 
-aside ul li{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-}
-
 .align{
     display: flex;
     flex-direction: column;
@@ -54,12 +50,17 @@ aside ul li{
     margin-bottom: 50px;
 }
 
-nav ul li a {
+aside ul li{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+aside ul li a {
     color: black;
     text-decoration: none; 
 }
 
-nav ul li a:hover {
+aside ul li a:hover {
     color: rgb(255, 0, 34); 
 }
 
@@ -175,14 +176,14 @@ p:not(.description){
 
 /*discographie*/
 
-.cover{
+.albums_cover{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     height: 290px;
 }
 
-.albums_cover{
+.disco{
     margin: 10px;
 }
 
@@ -195,6 +196,57 @@ p:not(.description){
 .photo3{
     height: 250px;
 }
+
+/*clips*/
+
+.slides{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    max-width: 600px; height: 400px;
+    left: 20px;
+}
+
+.slides video, .slides label {
+    position: absolute;
+  }
+
+.slides input[type="radio"] { display: none; }
+.slides figure {
+  visibility: hidden; opacity: 0;
+  transition: all 0.5s;
+}
+
+.slides input[type="radio"]:checked + figure {
+  visibility: visible; opacity: 1;
+}
+
+  .slides label, .slides figcaption {
+    color: #fff; background: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* (PART C) SLIDE IMAGES */
+  .slides video {
+    top: 0; left: 0;
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  
+  /* (PART D) SLIDE CAPTION */
+  .slides figcaption {
+    bottom: 0; left: 0;
+    width: 100%; padding: 10px; text-align: center;
+  }
+  
+  /* (PART E) LAST & NEXT BUTTONS */
+  .slides label {
+    top: 50%; transform: translateY(-50%); 
+    display: flex; align-items: center; justify-content: center;
+    width: 50px; height: 50px; border-radius: 50%;
+    font-size: 1.5em; cursor: pointer;
+  }
+  .slides label.last { left: -75px; }
+  .slides label.next { right: -75px; }
 
 /*footer*/
 footer {
