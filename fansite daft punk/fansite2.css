@@ -38,3 +38,56 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Gestion de toutes les images de la discographie */
+.img{
+    width: 300px;
+    height: 250px;
+}
+
+/* Separer le site pour integrer la sticky sidebar */
+.separateur{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main-center{
+    margin: 60px;
+}
+
+.align{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-left: 1px solid #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.navigation{
+    display: flex;
+    background-color: #BCBBBB;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    margin-top: 55px;
+    position: sticky;
+    top: 5%;
+}
+
+
+
+.menu{ /*Header du site*/
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
