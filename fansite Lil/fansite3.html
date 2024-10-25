@@ -42,22 +42,6 @@
         </section>
 
         <div class="separateur">
-            <div class="align">
-                <aside>
-                    <nav>
-                        <ul>
-                            <li><a href="#nav_actu">Actualités</a></li>
-                            <li><a href="#nav_disco">Discographie</a></li>
-                            <li><a href="#nav_event">Événements</a></li>
-                            <li><a href="#nav_clips">Clips</a></li>
-                            <li><a href="#nav_site">Site Officiel</a></li>
-                            <li><a href="#nav_form">Newsletter</a></li>
-                        </ul>
-                    </nav>
-                </aside>
-            </div>
-            <!--naviguation dans le site-->
-
             <div class="main-center">
                 <section id="nav_actu">
                     <h2>Actualité</h2>
@@ -66,21 +50,21 @@
                 <!--actualité-->
                 <section id="nav_disco">
                     <h2>Discographie</h2>
-                    <div class="albums">
+                    <div class="disco">
                         <article class="albums_cover">
-                            <img src="image_lilpeep/crybaby.jpg" alt="cover de l'album Crybaby" class="cover">
+                            <img src="image_lilpeep/crybaby.jpg" alt="cover de l'album Crybaby" class="albums_cover">
                             <h3>Crybaby-2016</h3>
                         </article>
                         <article class="albums_cover">
-                            <img src="image_lilpeep/hellboy.jpg" alt="cover de l'album Hellboy" class="cover">
+                            <img src="image_lilpeep/hellboy.jpg" alt="cover de l'album Hellboy" class="albums_cover">
                             <h3>Hellboy-2016</h3>
                         </article>
                         <article class="albums_cover">
-                            <img src="image_lilpeep/cowys2.jpg" alt="cover de l'album Come Over When You're Sober, Pt. 2" class="cover">
+                            <img src="image_lilpeep/cowys2.jpg" alt="cover de l'album Come Over When You're Sober, Pt. 2" class="albums_cover">
                             <h3>Come Over When You're Sober, Pt. 2-2018</h3>
                         </article>
                         <article class="albums_cover">
-                            <img src="image_lilpeep/ese.jpg" alt="cover de l'album Everybody's Everything" class="cover">
+                            <img src="image_lilpeep/ese.jpg" alt="cover de l'album Everybody's Everything" class="albums_cover">
                             <h3>Everybody's Everything-2019</h3>
                         </article>
                     </div>
@@ -104,9 +88,27 @@
                 <!--evenements-->
                 <section id="nav_clips">
                     <h2>Clips</h2>
-                    <video controls src="video_lilpeep/clip.mp4">Clip de Witchblades</video>
+                    <article class="slides">
+                        <input type="radio" name="slides" id="slide1" checked>
+                        <figure>
+                            <video src="video_lilpeep/clip.mp4" controls width="700">Clip de Witchblades</video>
+                            <label for="slide2" class="next"><img src="image_sawano/suivant.png" alt="bouton pour allé au clip suivant" class="bouton"></label>
+                        </figure>
+                        <input type="radio" name="slides" id="slide2">
+                        <figure>
+                            <video src="image_sawano/SawanoHiroyuki[nZk]TOMORROW X TOGETHER 『LEveL』 Music Video.mp4" controls width="700"></video>
+                            <label for="slide1" class="last"><img src="image_sawano/precedent.png" alt="bouton pour allé au clip précédent" class="bouton"></label>
+                            <label for="slide3" class="next"><img src="image_sawano/suivant.png" alt="bouton pour allé au clip suivant" class="bouton"></label>
+                        </figure>
+                        <input type="radio" name="slides" id="slide3">
+                        <figure>
+                            <video src="image_sawano/SawanoHiroyuki[nZk]XAI「LEMONADE」Music Video 七つの大罪 怨嗟のエジンバラ 前編 ver..mp4" controls width="700"></video>
+                            <label for="slide2" class="last"><img src="image_sawano/precedent.png" alt="bouton pour allé au clip précédent" class="bouton"></label>
+                        </figure>
+                    </article>
                 </section>
                 <!--clips-->
+
                 <section id="site">
                     <h2>Site Officiel</h2>
                     <a href="https://lilpeep.com/">Lien du Site Officiel</a>
@@ -126,6 +128,21 @@
                 </section>
                 <!--formulaire de newsletter-->
             </div>
+            <div class="align">
+                <aside>
+                    <nav>
+                        <ul>
+                            <li><a href="#nav_actu">Actualités</a></li>
+                            <li><a href="#nav_disco">Discographie</a></li>
+                            <li><a href="#nav_event">Événements</a></li>
+                            <li><a href="#nav_clips">Clips</a></li>
+                            <li><a href="#nav_site">Site Officiel</a></li>
+                            <li><a href="#nav_form">Newsletter</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            <!--naviguation dans le site-->
         </div>
     </main>
     <footer>
