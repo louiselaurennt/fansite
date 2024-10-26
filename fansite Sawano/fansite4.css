@@ -101,13 +101,13 @@ h2 {
     font-size: 35px;
 }
 
-.separateur p {
+.separateur p { /*police et couleurs du texte de Actualité jusqu'a Newsletters*/
     color: #FFFFFF;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
 
-nav{
+nav{ /*disposition des menu de navigations*/
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -115,13 +115,14 @@ nav{
     justify-content: space-between;
 }
 
-.link-page{
+.link-page{ /*disposition et couleurs des liens*/
     color: black; 
     margin-left: 3%;
     width: 210px;
     font-size: 24px;
 }
 
+/*disposition de la partie presentation*/
 .presentation{
     background-color: #070707;
     display: flex;
@@ -171,10 +172,14 @@ nav{
     margin-left: 15px;
 }
 
-.separateur{
+/*-----------------------*/
+
+.separateur{ /*crée une séparation entre le menu de navigation et la partie principale du site*/
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+
+/*Couleur et font des liens du menu de navigation*/
 
 nav ul li a {
     color: black; 
@@ -186,13 +191,17 @@ nav ul li a:hover {
     color: black; 
 }
 
-.main-center{
+/*-------------------------*/
+
+.main-center{ /*marge du contenu principal*/
     margin: 60px;
 }
 
-.music-disco{
+.music-disco{ /*Taille des images*/
     height: 290px;
 }
+
+/*disposition et configuration du slider*/
 
 .slides{
     display: flex;
@@ -207,38 +216,43 @@ nav ul li a:hover {
     position: absolute;
   }
 
-.slides input[type="radio"] { display: none; }
+.slides input[type="radio"] { display: none; } /*transition entre les videos - disparition video*/
 .slides figure {
-  visibility: hidden; opacity: 0;
-  transition: all 0.5s;
+    visibility: hidden; 
+    opacity: 0;
+    transition: all 0.5s;
 }
 
-.slides input[type="radio"]:checked + figure {
-  visibility: visible; opacity: 1;
+.slides input[type="radio"]:checked + figure { /*transition entre les videos - apparition video*/
+    visibility: visible; 
+    opacity: 1;
 }
 
-  .slides label, .slides figcaption {
+  .slides label {
     color: #fff; background: rgba(0, 0, 0, 0.7);
   }
   
-  /* (PART C) SLIDE IMAGES */
+  /*enplacement et taille video*/
   .slides video {
-    top: 0; left: 0;
-    width: 100%; height: 100%; object-fit: cover;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
   }
   
-  /* (PART D) SLIDE CAPTION */
-  .slides figcaption {
-    bottom: 0; left: 0;
-    width: 100%; padding: 10px; text-align: center;
-  }
-  
-  /* (PART E) LAST & NEXT BUTTONS */
+  /*emplacelment et taille des boutons*/
   .slides label {
-    top: 50%; transform: translateY(-50%); 
-    display: flex; align-items: center; justify-content: center;
-    width: 50px; height: 50px; border-radius: 50%;
-    font-size: 1.5em; cursor: pointer;
+    top: 50%; 
+    transform: translateY(-50%); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    font-size: 1.5em; 
+    cursor: pointer;
   }
   .slides label.last { left: -75px; }
   .slides label.next { right: -75px; }
@@ -247,7 +261,9 @@ nav ul li a:hover {
     height: 90px;
 }
 
-.news-box{
+/*-------------------------*/
+
+.news-box{ /*Apparence box newsletter*/
     background-color: #D9D9D9;
     width: 350px;
     padding: 20px;
@@ -257,7 +273,7 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-.navigation{
+.navigation{ /*Apparence boite du menu de navigation*/
     display: flex;
     background-color: #BCBBBB;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -281,7 +297,7 @@ article{
     margin: 10px;
 }
 
-.align{
+.align{ /*alignement de la boite*/
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -291,7 +307,7 @@ article{
     margin-bottom: 50px;
 }
 
-footer {
+footer { /*Apparence du footer*/
     background-color: #D9D9D9;
     display: flex;
     flex-direction: row;
@@ -305,6 +321,8 @@ footer {
 #logo-footer{
     height: 150px;
 }
+
+/*Configuration du meu burger pour les ecrans de telephones et tablette*/
 
 .burger{
     margin-left: 70%;
@@ -351,6 +369,10 @@ footer {
 .burger nav a:hover {
   background: #444;
 }
+
+/*----------------------------*/
+
+/*Configuration de l'apparence du site pour les differents type d'ecran - media queries/responsif*/
 
 @media screen and (min-width: 1024px){
     .burger{
